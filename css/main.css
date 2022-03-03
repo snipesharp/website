@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    background-color: rgb(39, 40, 41);
+
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+a {
+    color: rgb(32, 113, 243);
+    text-decoration: none;
+    transition: 0.25s;
+}
+a:hover {
+    color: rgb(96, 157, 255);
+    font-size: 115%;
+}
+
+/* Topbar */
+
+.topbar {
+    background-color: rgb(28, 29, 30);
+    min-height: 5rem;
+}
+
+.topbarLogo {
+    padding-left: 0.5rem;
+    max-height: 4rem;
+}
+
+/* Divs */
+
+.titleContainer {
+    min-height: 4rem;
+    max-height: 4rem;
+}
+
+.separator {
+    background-color: rgb(48, 53, 63);
+    margin: 0 auto;
+    height: 0.1rem;
+    width: 80%;
+}
+
+/* Text */
+
+.bold {
+    font-weight: 1000;
+}
+
+/* General */
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.vcentered {
+    line-height: 50%;
+}
+
+.hcentered {
+    text-align: center;
+}
+
+.z1 {
+    z-index: 1;
+}
