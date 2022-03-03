@@ -9,6 +9,10 @@ body {
 
 a {
     color: rgb(32, 113, 243);
+    
+    width: fit-content;
+    margin:auto;
+
     text-decoration: none;
     transition: 0.25s;
 }
@@ -25,13 +29,13 @@ a:hover {
 }
 
 .topbarLogo {
-    padding-left: 0.5rem;
     max-height: 4rem;
 }
 
 /* Divs */
 
 .titleContainer {
+    overflow: hidden;
     min-height: 4rem;
     max-height: 4rem;
 }
@@ -40,8 +44,9 @@ a:hover {
     background-color: rgb(48, 53, 63);
     margin: 0 auto;
     padding: 0.01rem;
-    height: 0.15rem;
-    width: 80%;
+    margin-top: 1.5rem;
+    height: 0.1rem;
+    width: 90%;
 }
 
 .footer {
