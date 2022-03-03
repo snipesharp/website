@@ -13,7 +13,7 @@ a {
     transition: 0.25s;
 }
 a:hover {
-    color: rgb(96, 157, 255);
+    color: rgb(115, 169, 255);
     font-size: 115%;
 }
 
@@ -39,8 +39,16 @@ a:hover {
 .separator {
     background-color: rgb(48, 53, 63);
     margin: 0 auto;
-    height: 0.1rem;
+    padding: 0.01rem;
+    height: 0.15rem;
     width: 80%;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    height: 4rem;
+    width: 100%;
 }
 
 /* Text */
