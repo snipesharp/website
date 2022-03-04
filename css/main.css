@@ -9,6 +9,7 @@ body {
 
 a {
     color: rgb(32, 113, 243);
+    position: relative;
     
     width: fit-content;
     margin:auto;
@@ -20,6 +21,23 @@ a:hover {
     color: rgb(115, 169, 255);
     font-size: 115%;
 }
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(104, 172, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+  
+a:hover::before {
+    transform: scaleX(1);
+}
+
 
 /* Topbar */
 
@@ -30,6 +48,9 @@ a:hover {
 
 .topbarLogo {
     max-height: 4rem;
+}
+.topbarLogo::before {
+    display: none;
 }
 
 /* Divs */
@@ -58,6 +79,12 @@ a:hover {
 
 /* Text */
 
+.titleLink {
+    font-size: 24pt;
+}
+.titleLink:hover {
+    font-size: 28pt;
+}
 .bold {
     font-weight: 1000;
 }
