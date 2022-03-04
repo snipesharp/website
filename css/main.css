@@ -53,6 +53,7 @@ a:hover::before {
 .header {
     background-color: var(--dark-header-bg);
     min-height: 5rem;
+    width: 100%;
 }
 
 .headerLogo {
