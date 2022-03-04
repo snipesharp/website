@@ -62,6 +62,20 @@ a:hover::before {
     display: none;
 }
 
+.dementedHead {
+    max-height: 4rem;
+}
+.dementedHead::before {
+    background-color: red;
+}
+
+.stiliyanHead {
+    max-height: 4rem;
+}
+.stiliyanHead::before {
+    background-color: rgb(59, 142, 62);
+}
+
 /* Divs */
 
 .titleContainer {
@@ -114,7 +128,6 @@ a:hover::before {
 }
 
 .flex-row {
-    width: fit-content;
     display: flex;
     flex-direction: row;
 }
