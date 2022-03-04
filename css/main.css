@@ -106,6 +106,14 @@ a:hover::before {
 .titleLink {
     font-size: 24pt;
 }
+@media only screen and (max-width: 600px) {
+    .titleLink {
+      font-size: 16pt;
+    }
+    .titleLink:hover {
+        font-size: 18pt !important;
+    }
+}
 .titleLink:hover {
     font-size: 28pt;
 }
