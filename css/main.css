@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+:root {
+    --dark-bg: rgb(39, 40, 41);
+    --dark-header-bg: rgb(28, 29, 30);
+    --dark-separator: rgb(48, 53, 63);
+
+    --link: rgb(32, 113, 243);
+    --link-hovered: rgb(115, 169, 255);
+}
+
 body {
-    background-color: rgb(39, 40, 41);
+    background-color: var(--dark-bg);
 
     font-family: 'Source Code Pro', monospace;
     color: white;
 }
 
 a {
-    color: rgb(32, 113, 243);
+    color: var(--link);
     position: relative;
     
     width: fit-content;
@@ -18,7 +27,7 @@ a {
     transition: 0.25s;
 }
 a:hover {
-    color: rgb(115, 169, 255);
+    color: var(--link-hovered);
     font-size: 115%;
 }
 a::before {
@@ -29,7 +38,7 @@ a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(104, 172, 255);
+    background-color: var(--link-hovered);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -39,17 +48,17 @@ a:hover::before {
 }
 
 
-/* Topbar */
+/* Header */
 
-.topbar {
-    background-color: rgb(28, 29, 30);
+.header {
+    background-color: var(--dark-header-bg);
     min-height: 5rem;
 }
 
-.topbarLogo {
+.headerLogo {
     max-height: 4rem;
 }
-.topbarLogo::before {
+.headerLogo::before {
     display: none;
 }
 
@@ -62,7 +71,7 @@ a:hover::before {
 }
 
 .separator {
-    background-color: rgb(48, 53, 63);
+    background-color: var(--dark-separator);
     margin: 0 auto;
     padding: 0.01rem;
     margin-top: 1.5rem;
