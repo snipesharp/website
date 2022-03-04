@@ -104,9 +104,19 @@ a:hover::before {
     justify-content: center;
 }
 
+.flex-align-center {
+    align-content: center;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
 }
 
 .vcentered {
@@ -114,6 +124,8 @@ a:hover::before {
 }
 
 .hcentered {
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
