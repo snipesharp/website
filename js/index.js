@@ -5,6 +5,7 @@ function copyXmrDemented() {
     window.getSelection().addRange(r);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
+}
 function copyBtcDemented() {
     var r = document.createRange();
     r.selectNode(document.getElementById("btcDemented"));
