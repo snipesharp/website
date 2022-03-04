@@ -57,6 +57,11 @@ input {
     background-color: var(--dark-header-bg);
 }
 
+p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /* Header */
 
 .header {
@@ -89,7 +94,6 @@ input {
 /* Divs */
 
 .paragraph {
-    text-align: left;
     display: flex;
     justify-content: center;
 }
@@ -118,6 +122,12 @@ input {
 
 /* Text */
 
+.textAlignLeft {
+    text-align: left;
+}
+.cryptoAddress:hover {
+    font-size: 100%;
+}
 .titleLink {
     font-size: 24pt;
 }
