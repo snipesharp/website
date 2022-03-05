@@ -100,6 +100,7 @@ p {
 .paragraph {
     display: flex;
     justify-content: center;
+    max-width: 90%;
 }
 
 .titleContainer {
@@ -128,6 +129,10 @@ p {
 
 .textAlignLeft {
     text-align: left;
+    word-break: break-al;
+}
+.cryptoAddress {
+    word-break: break-al;
 }
 .cryptoAddress:hover {
     font-size: 100%;
