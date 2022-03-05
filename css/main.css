@@ -16,6 +16,19 @@ body {
     color: white;
 }
 
+header {
+    background-color: var(--dark-header-bg);
+    min-height: 5rem;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    height: 4rem;
+    width: 100%;
+}
+
 h1 {
     margin-bottom: 0;
 }
@@ -68,12 +81,6 @@ p {
 
 /* Header */
 
-.header {
-    background-color: var(--dark-header-bg);
-    min-height: 5rem;
-    width: 100%;
-}
-
 .headerLogo {
     max-height: 5rem;
 }
@@ -116,13 +123,6 @@ p {
     margin-top: 1.5rem;
     height: 0.1rem;
     width: 90%;
-}
-
-.footer {
-    text-align: center;
-    margin: 0 auto;
-    height: 4rem;
-    width: 100%;
 }
 
 /* Text */
