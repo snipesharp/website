@@ -75,7 +75,7 @@ p {
 }
 
 .headerLogo {
-    max-height: 4rem;
+    max-height: 5rem;
 }
 .headerLogo::before {
     display: none;
