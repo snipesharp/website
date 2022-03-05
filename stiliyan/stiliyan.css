@@ -1,0 +1,23 @@
+a {
+    color: rgb(102, 160, 83);
+}
+a:hover {
+    color: rgb(139, 221, 136);
+}
+a::before {
+    background-color: rgb(139, 221, 136);
+}
+
+h1 {
+    color:rgb(86, 86, 86);
+    text-shadow: 25px;
+    background-color: rgb(36, 36, 36);
+}
+
+.separator {
+    background-color: rgb(69, 69, 69);
+}
+
+.titleContainer {
+    min-height: 5rem;
+}
