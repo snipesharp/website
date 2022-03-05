@@ -9,7 +9,7 @@
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid rgba(0, 0, 0, .72);
+    border-bottom: 5px solid rgb(24, 24, 24);
 }
 .copyPopup:after {
     content: 'Copy';
@@ -40,6 +40,6 @@
     position: absolute;
     right: 12px;
     bottom: 12px;
-    color: rgba(0, 0, 0, .07);
+    color: rgb(24, 24, 24);
     font-size: 10px;
 }
