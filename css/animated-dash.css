@@ -1,0 +1,28 @@
+.border {
+    background: linear-gradient(90deg, var(--link) 50%, transparent 50%), 
+                linear-gradient(90deg, var(--link) 50%, transparent 50%), 
+                linear-gradient(0deg, var(--link) 50%, transparent 50%), 
+                linear-gradient(0deg, var(--link) 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 2px, 16px 2px, 2px 16px, 2px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    animation: none;
+    border: none;
+}
+.border:focus {
+    animation: dash 10s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
+
+.background {
+    background-color: var(--dark-header-bg);
+    width: fit-content;
+    margin: auto;
+}

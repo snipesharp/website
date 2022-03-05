@@ -1,0 +1,19 @@
+a {
+    color: rgb(205, 22, 22);
+}
+a:hover {
+    color: rgb(235, 92, 92);
+}
+a::before {
+    background-color: rgb(235, 92, 92);
+}
+
+h1 {
+    color:rgb(86, 86, 86);
+    text-shadow: 25px;
+    background-color: rgb(36, 36, 36);
+}
+
+.separator {
+    background-color: rgb(69, 69, 69);
+}

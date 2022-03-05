@@ -10,17 +10,16 @@
     <meta content="https://snipesharp.xyz/img/logo.png" property="og:image" />
     <meta content="#0362fc" data-react-helmet="true" name="theme-color" />
     <title>snipesharp - Donate</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reveal.css">
+    <link rel="stylesheet" href="/css/animated-dash.css">
 </head>
 <body>
     <div class="header flex-row flex-justify-center">
-        <a class="dementedHead" href="https://namemc.com/profile/dement6d.1" target="_blank" rel="noopener noreferrer"><img class="dementedHead" src="https://mc-heads.net/head/a5aee899-2d82-4594-aed1-f547178db6c0/100"></img></a>
-        <a class="headerLogo" href="https://snipesharp.xyz">
-            <img src="../img/logo.png" class="headerLogo z0">
-        </a>
-        <a class="stiliyanHead" href="https://github.com/StiliyanKushev" target="_blank" rel="noopener noreferrer"><img class="stiliyanHead" src="https://i.imgur.com/lMWqAlH.png" height="64"></img></a>
+        <a class="dementedHead" href="/demented"><img class="dementedHead" src="/img/demented.png"></img></a>
+        <a class="headerLogo" href="/"><img src="/img/logo.png" class="headerLogo z0"></a>
+        <a class="stiliyanHead" href="/stiliyan"><img class="stiliyanHead" src="/img/stiliyan.png"></img></a>
     </div>
     
     <div class="hcentered">
@@ -34,10 +33,11 @@
         <div class="separator hcentered"></div>
         <div id="smart-button-container">
             <p>Note</p>
-            <div style="text-align: center"><label for="description"></label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+            <div class="background" style="text-align: center"><label for="description"></label><input class="border" type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
               <p id="descriptionError" style="display:none; visibility: hidden; color:red; text-align: center;">Please enter your Discord contact as a Note</p>
+            <br/>
             <p>Amount (USD)</p>
-            <div style="text-align: center"><label for="amount"></label><input name="amountInput" type="number" id="amount" value="" ><span></span></div>
+            <div class="background" style="text-align: center"><label for="amount"></label><input class="border" name="amountInput" type="number" id="amount" value="" ><span></span></div>
               <p id="priceLabelError" style="display:none; visibility: hidden; color:red; text-align: center;">Please enter a price</p>
             <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
               <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
@@ -59,14 +59,16 @@
     <script src="../js/index.js"></script>
 
     <div class="separator hcentered"></div>
+
     <div class="footer flex-column flex-justify-center">
-        <p>
-            snipesharp by demented & Stiliyan Kushev
-             • <a href="/donate" target="_blank" rel="noopener noreferrer">Donate</a>
-             • <a href="https://github.com/snipesharp" target="_blank" rel="noopener noreferrer">Github</a>
-             • <a href="https://discord.gg/ptFvZ8AYuU" target="_blank" rel="noopener noreferrer">Discord</a> 
-             • <a href="https://github.com/snipesharp/snipesharp/wiki" target="_blank" rel="noopener noreferrer">Help</a> 
-        </p>
+      <p>
+          snipesharp by demented & Stiliyan Kushev
+           • <a href="/donate">Donate</a>
+           • <a href="https://github.com/snipesharp" target="_blank" rel="noopener noreferrer">Github</a>
+           • <a href="/discord" target="_blank" rel="noopener noreferrer">Discord</a> 
+           • <a href="https://github.com/snipesharp/snipesharp/wiki" target="_blank" rel="noopener noreferrer">Help</a> 
+      </p>
     </div>
+
 </body>
 </html>
