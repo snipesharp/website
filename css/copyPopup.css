@@ -1,0 +1,45 @@
+.copyPopup:before {
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 9998;
+    top: 35px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(0, 0, 0, .72);
+}
+.copyPopup:after {
+    content: 'Copy';
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 40px;
+    left: -37px;
+    width: 114px;
+    height: 36px;
+    color: #fff;
+    font-size: 12pt;
+    line-height: 36px;
+    text-align: center;
+    background: rgb(24, 24, 24);
+    border-radius: 3px;
+}
+.copyPopup:hover:before, .copyPopup:hover:after {
+    display: block;
+}
+.copyPopup:active, .copyPopup:focus {
+    outline: none;
+}
+.copyPopup:active:after, .copyPopup:focus:after {
+    content: 'Copied!';
+}
+.signature {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    color: rgba(0, 0, 0, .07);
+    font-size: 10px;
+}

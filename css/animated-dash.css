@@ -13,6 +13,9 @@
 }
 .border:focus {
     animation: dash 10s linear infinite;
+    outline: none !important;
+    border:1px solid var(--link);
+    box-shadow: 0 0 5px var(--link);
 }
 
 @keyframes dash {

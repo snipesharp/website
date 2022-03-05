@@ -57,7 +57,7 @@ input {
     border-color: var(--link);
     border-style: dashed;
     min-height: 1.75rem;
-    color: white;
+    color: var(--link);
     background-color: var(--dark-header-bg);
 }
 
@@ -133,9 +133,20 @@ p {
 }
 .cryptoAddress {
     word-break: break-al;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 .cryptoAddress:hover {
     font-size: 100%;
+}
+.cryptoAddress::after {
+
 }
 .titleLink {
     font-size: 24pt;

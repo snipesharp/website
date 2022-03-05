@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/reveal.css">
+    <link rel="stylesheet" href="/css/copyPopup.css">
     <link rel="stylesheet" href="/css/animated-dash.css">
 </head>
 <body>
@@ -33,15 +34,15 @@
         <div class="separator hcentered"></div>
         <div id="smart-button-container">
             <p>Note</p>
-            <div class="background" style="text-align: center"><label for="description"></label><input class="border" type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+            <div class="background" style="text-align: center"><label for="description"></label><input class="bold border" type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
               <p id="descriptionError" style="display:none; visibility: hidden; color:red; text-align: center;">Please enter your Discord contact as a Note</p>
             <br/>
             <p>Amount (USD)</p>
-            <div class="background" style="text-align: center"><label for="amount"></label><input class="border" name="amountInput" type="number" id="amount" value="" ><span></span></div>
-              <p id="priceLabelError" style="display:none; visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+            <div class="background" style="text-align: center"><label for="amount"></label><input class="bold border" name="amountInput" type="number" id="amount" value="" ><span></span></div>
+              <p id="priceLabelError" style="display:none; visibility: hidden; color:red; text-align: center;">Please enter an amount</p>
             <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
               <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
-            <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+            <div style="text-align: center; margin-top: 0.625rem; max-width: 90%; margin: auto;" id="paypal-button-container"></div>
           </div>
           <script src="https://www.paypal.com/sdk/js?client-id=AfL7oixoD9eonIxQoobMhjyV6-F2v1Jlk5K7HGL8XTiKM7GJVgwd75XitieSM97BxNRzAKQg_1anqe-W&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
           <script src="paypalWidget.js"></script>
@@ -50,10 +51,10 @@
         <h1>Crypto</h1>
         <div class="textAlignLeft">
             <p>
-                Monero (demented): <a class="cryptoAddress" onclick="copyXmrDemented()" id="xmrDemented" > 89Gk3YiZGWnLsgGygzRg8Shqp1UyEuYGMbnrz3dLX9isbiLb5b8e6Zu4rT6NX5K5dsNtMb1WTyScqdYCsjxNfUFaRLcdeBk</a><br>
-                Bitcoin (demented): <a class="cryptoAddress" onclick="copyBtcDemented()" id="btcDemented" > bc1qfppf2n4qe4qcsehlh66gg4dz6qv7m3dd7fsam3</a>
+                Monero (demented): <a class="cryptoAddress copyPopup" onclick="copyXmrDemented()" id="xmrDemented" >89Gk3YiZGWnLsgGygzRg8Shqp1UyEuYGMbnrz3dLX9isbiLb5b8e6Zu4rT6NX5K5dsNtMb1WTyScqdYCsjxNfUFaRLcdeBk</a><br>
+                Bitcoin (demented): <a class="cryptoAddress copyPopup" onclick="copyBtcDemented()" id="btcDemented" >bc1qfppf2n4qe4qcsehlh66gg4dz6qv7m3dd7fsam3</a>
                 <br><br>
-                Monero (StiliyanKushev): <a class="cryptoAddress" onclick="copyXmrStiliyan()" id="btcStiliyan" > 84kNMesoAJZ3yKPuZu3bYoCWTpCTyspin3e6koR2t6whRF3eXkpXv7xVdBsYd3Q1Cfc7oGzTeBjNCU8nAd785Xm14bjffRt</a>
+                Monero (StiliyanKushev): <a class="cryptoAddress copyPopup" onclick="copyXmrStiliyan()" id="xmrStiliyan" >84kNMesoAJZ3yKPuZu3bYoCWTpCTyspin3e6koR2t6whRF3eXkpXv7xVdBsYd3Q1Cfc7oGzTeBjNCU8nAd785Xm14bjffRt</a>
                 <br><br>
             </p>
         </div>
