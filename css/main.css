@@ -145,9 +145,6 @@ p {
 .cryptoAddress:hover {
     font-size: 100%;
 }
-.cryptoAddress::after {
-
-}
 .titleLink {
     font-size: 24pt;
 }
