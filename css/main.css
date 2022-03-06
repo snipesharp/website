@@ -96,6 +96,9 @@ p {
     animation-duration: 1s;
     transform: scale(0.8);
 }
+.crosshair:hover {
+    transform: scale(0.75);
+}
 @keyframes crosshairAnim {
     0% {
         margin-left: 3rem;
