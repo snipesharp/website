@@ -1,3 +1,6 @@
+var enableJsNotifier = document.getElementById('enableJsNotifier');
+enableJsNotifier.setAttribute('hidden', 'true');
+
 function initPayPalButton() {
   var description = document.querySelector('#smart-button-container #description');
   var amount = document.querySelector('#smart-button-container #amount');
