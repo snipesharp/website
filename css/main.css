@@ -300,3 +300,15 @@ p {
     transform: scale(1);
     opacity: 1;
 }
+.loadIn.noJs {
+    animation-name: load-in;
+    animation-delay: 10ms;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes load-in {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

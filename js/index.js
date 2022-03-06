@@ -15,6 +15,7 @@ const appearOnScroll = new IntersectionObserver
 }, appearOptions);
 
 faders.forEach(fader => {
+    fader.classList.remove('noJs');
     appearOnScroll.observe(fader);
 })
 
