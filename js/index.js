@@ -1,3 +1,24 @@
+const faders = document.querySelectorAll('.loadIn');
+const appearOptions = {
+    threshold: 0.8
+};
+
+const appearOnScroll = new IntersectionObserver
+(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        else {
+            entry.target.classList.toggle('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    })
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
+
+
 function copyXmrDemented() {
     var r = document.createRange();
     r.selectNode(document.getElementById("xmrDemented"));

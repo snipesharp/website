@@ -288,3 +288,15 @@ p {
 .z1 {
     z-index: 1;
 }
+
+/* Load in animation */
+
+.loadIn {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.5s, opacity 0.2s ease-in;
+}
+.loadIn.appear {
+    transform: scale(1);
+    opacity: 1;
+}
