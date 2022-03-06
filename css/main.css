@@ -9,6 +9,8 @@
     --link-hovered: rgb(115, 169, 255);
 }
 
+/* Global tags */
+
 body {
     background-color: var(--dark-bg);
 
@@ -17,6 +19,8 @@ body {
 }
 
 header {
+    overflow: hidden;
+    position: relative;
     background-color: var(--dark-header-bg);
     min-height: 5rem;
     width: 100%;
@@ -84,8 +88,90 @@ p {
 .headerLogo {
     max-height: 5rem;
 }
-.headerLogo::before {
-    display: none;
+
+.crosshair {
+    position: absolute;
+    overflow: hidden;
+    animation-name: crosshairAnim;
+    animation-duration: 1s;
+    transform: scale(0.8);
+}
+@keyframes crosshairAnim {
+    0% {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        filter: blur(0.3rem);
+        opacity: 0%;
+        transform: translateX(2);
+        transform: scale(15) rotate(420deg);
+    }
+    100% {
+        margin-left: 0rem;
+        margin-top: 0rem;
+        filter: blur(0rem);
+        opacity: 100%;
+        transform: skew(0deg, 0deg);
+        transform: rotate(0deg);
+        transform: translateX(0);
+        transform: scale(0.8);
+    }
+}
+.whiteS {
+    position:absolute;
+    transform: scale(0.8);
+    animation-name: whiteSAnim;
+    animation-duration: 1s;
+}
+.whiteS::before {
+    transform: scale(0);
+}
+@keyframes whiteSAnim {
+    0%, 20% {
+        opacity: 0%;
+        transform: rotate(0deg);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 100%;
+        transform: rotate(720deg);
+        transform: scale(0.8);
+    }
+}
+.blueS {
+    position:absolute;
+    transform: scale(0.8);
+    animation-name: blueSAnim;
+    animation-duration: 0.8s;
+}
+@keyframes blueSAnim {
+    from {
+        opacity: 0%;
+        transform: rotate(0deg);
+        transform: scale(0);
+    }
+    to {
+        opacity: 100%;
+        transform: rotate(720deg);
+        transform: scale(0.8);
+    }
+}
+.crosshair:hover {
+    font-size: 100%;
+}
+.whiteS:hover {
+    font-size: 100%;
+}
+.blueS:hover {
+    font-size: 100%;
+}
+.crosshair::before {
+    background-color: unset;
+}
+.whiteS::before {
+    background-color: unset;
+}
+.blueS::before {
+    background-color: unset;
 }
 
 .dementedHead {
