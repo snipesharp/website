@@ -302,7 +302,7 @@ p {
 }
 .loadIn.noJs {
     animation-name: load-in;
-    animation-delay: 10ms;
+    animation-delay: 100ms;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
