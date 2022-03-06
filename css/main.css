@@ -219,6 +219,8 @@ p {
 .textAlignLeft {
     text-align: left;
     word-break: break-al;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .cryptoAddress {
     word-break: break-al;
