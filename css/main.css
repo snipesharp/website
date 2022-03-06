@@ -242,10 +242,10 @@ p {
 }
 @media only screen and (max-width: 600px) {
     .titleLink {
-      font-size: 16pt;
+      font-size: 18pt;
     }
     .titleLink:hover {
-        font-size: 18pt !important;
+        font-size: 20pt !important;
     }
 }
 .titleLink:hover {
