@@ -63,7 +63,6 @@ a::before {
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-  
 a:hover::before {
     transform: scaleX(1);
 }
@@ -191,6 +190,13 @@ p {
     background-color: rgb(59, 142, 62);
 }
 
+/* Links */
+
+
+.noUnderline:hover::before {
+    transform: scale(0);
+}
+
 /* Divs */
 
 .paragraph {
@@ -313,4 +319,17 @@ p {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+/* Star */
+
+.star {
+    max-width: 1.5rem;
+    vertical-align: text-bottom;
+
+    transition: 500ms;
+    transform: scale(1) rotate(0deg);
+}
+.star:hover {
+    transform: scale(1.25) rotate(145deg);
 }
