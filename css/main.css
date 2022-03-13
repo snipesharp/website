@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap');
 
 :root {
-    --dark-bg: rgb(39, 40, 41);
-    --dark-header-bg: rgb(28, 29, 30);
+    --dark-bg: rgb(39, 40, 44);
+    --dark-header-bg: rgb(26, 28, 32);
     --dark-separator: rgb(48, 53, 63);
 
     --link: rgb(32, 113, 243);
