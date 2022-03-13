@@ -19,7 +19,6 @@ faders.forEach(fader => {
     appearOnScroll.observe(fader);
 })
 
-
 function copyXmrDemented() {
     var r = document.createRange();
     r.selectNode(document.getElementById("xmrDemented"));

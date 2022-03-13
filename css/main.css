@@ -192,12 +192,50 @@ p {
 
 /* Links */
 
+.normalizeLink {
+    color: unset;
+    pointer-events: none;
+}
 
 .noUnderline:hover::before {
     transform: scale(0);
 }
 
 /* Divs */
+
+.minimized {
+    overflow: hidden;
+    max-height: 0rem;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+    transition: max-height 0.25s;
+}
+
+@keyframes unminimize {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        max-height: 0rem;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        max-height: 10rem;
+    }
+}
+
+@keyframes minimize {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        max-height: 10rem;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+        max-height: 0rem;
+    }
+}
 
 .paragraph {
     display: flex;
@@ -209,6 +247,11 @@ p {
     overflow: hidden;
     min-height: 4rem;
     max-height: 4rem;
+}
+.titleContainerSmall {
+    overflow: hidden;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
 }
 
 .separator {
