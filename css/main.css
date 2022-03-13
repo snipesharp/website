@@ -224,7 +224,7 @@ p {
     100% {
         transform: scale(1);
         opacity: 1;
-        max-height: 10rem;
+        max-height: 15rem;
     }
 }
 
@@ -232,7 +232,7 @@ p {
     0% {
         transform: scale(1);
         opacity: 1;
-        max-height: 10rem;
+        max-height: 15rem;
     }
     100% {
         transform: scale(0);
@@ -247,15 +247,21 @@ p {
     max-width: 90%;
 }
 
-.titleContainer {
+.linkContainer {
     overflow: hidden;
     min-height: 3.75rem;
     max-height: 3.75rem;
 }
-.titleContainerSmall {
+.linkContainerSmall {
     overflow: hidden;
     min-height: 1.5rem;
     max-height: 1.5rem;
+}
+
+.linkContainerBig {
+    overflow: hidden;
+    min-height: 7rem;
+    max-height: 7rem;
 }
 
 .separator {
@@ -296,11 +302,11 @@ p {
     font-size: 24pt;
 }
 @media only screen and (max-width: 600px) {
-    .titleLink {
-      font-size: 18pt;
-    }
-    .titleLink:hover {
-        font-size: 20pt !important;
+    .titleLinkBig {
+        font-size: 16pt;
+      }
+    .titleLinkBig:hover {
+        font-size: 18pt !important;
     }
 }
 .titleLink:hover {
