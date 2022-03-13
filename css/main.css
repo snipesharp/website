@@ -78,7 +78,7 @@ input {
     border-style: dashed;
     min-height: 1.75rem;
     color: var(--link);
-    oackground-color: var(--dark-header-bg);
+    background-color: var(--dark-header-bg);
 }
 
 p {
