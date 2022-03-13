@@ -23,7 +23,7 @@ function getOS() {
 
 function toggleShowAllOptions() {
     showingAllOptions = !showingAllOptions
-    showAllOptions.textContent = !showingAllOptions ? "See more download options" : "See less download options"
+    showAllOptions.textContent = !showingAllOptions ? "See all download options" : "See less download options"
     if (!showingAllOptions) downloadOptions.style.animationName = "minimize"
     else downloadOptions.style.animationName = "unminimize"
 }
