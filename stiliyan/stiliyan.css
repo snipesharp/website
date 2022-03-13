@@ -1,21 +1,16 @@
-a {
-    color: rgb(102, 160, 83);
-}
-a:hover {
-    color: rgb(139, 221, 136);
-}
-a::before {
-    background-color: rgb(139, 221, 136);
+:root {
+    --dark-bg: rgb(41, 42, 42);
+    --dark-header-bg: rgb(30, 30, 31);
+    --dark-separator: rgb(61, 61, 63);
+
+    --link: rgb(102, 160, 83);
+    --link-hovered: rgb(139, 221, 136);
 }
 
 h1 {
     color:rgb(86, 86, 86);
     text-shadow: 25px;
     background-color: rgb(36, 36, 36);
-}
-
-.separator {
-    background-color: rgb(69, 69, 69);
 }
 
 .titleContainer {
