@@ -249,8 +249,8 @@ p {
 
 .titleContainer {
     overflow: hidden;
-    min-height: 3.5rem;
-    max-height: 3.5rem;
+    min-height: 3.75rem;
+    max-height: 3.75rem;
 }
 .titleContainerSmall {
     overflow: hidden;
