@@ -22,28 +22,30 @@ function getOS() {
 }
 
 function toggleShowAllOptions(event) {
-    event.preventDefault();
-    showingAllOptions = !showingAllOptions
-    showAllOptions.textContent = !showingAllOptions ? "See all download options" : "See less download options"
-    if (!showingAllOptions) downloadOptions.style.animationName = "minimize"
-    else downloadOptions.style.animationName = "unminimize"
+    if (getOS() != "None") {
+        event.preventDefault();
+        showingAllOptions = !showingAllOptions
+        showAllOptions.textContent = !showingAllOptions ? "See all download options" : "See less download options"
+        if (!showingAllOptions) downloadOptions.style.animationName = "minimize"
+        else downloadOptions.style.animationName = "unminimize"
+    }
 }
 
 (function () {
-    showAllOptions.setAttribute("href", "#")
-    downloadOptions.classList.add("minimized")
-    downloadOptions.removeAttribute("hidden")
-    downloadLink.classList.remove("normalizeLink")
     let os = getOS();
 
     if (os == "None") {
         toggleShowAllOptions();
         downloadLink.textContent = "Downloads"
-        downloadOptions.removeAttribute("hidden")
         downloadLink.classList.add("normalizeLink")
+        downloadOptions.removeAttribute("hidden")
         return;
     }
-
+    
+    showAllOptions.setAttribute("href", "#")
+    downloadOptions.classList.add("minimized")
+    downloadOptions.removeAttribute("hidden")
+    downloadLink.classList.remove("normalizeLink")
     downloadLink.textContent = "Download for " + os;
 
     if (os == "Linux") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.5.7/snipesharp_linux-x86-64-v1.5.7");

@@ -1,6 +1,7 @@
 let os = getOS()
 let downloadText = document.getElementById("downloadText")
 
+console.log(getOS())
 if (os == "None") {
     location.replace("/")
     throw new Error("Non compatible user agent")

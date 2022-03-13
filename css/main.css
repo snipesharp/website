@@ -302,10 +302,10 @@ p {
     font-size: 24pt;
 }
 @media only screen and (max-width: 600px) {
-    .titleLinkBig {
+    .titleLink.big {
         font-size: 16pt;
       }
-    .titleLinkBig:hover {
+    .titleLink.big:hover {
         font-size: 18pt !important;
     }
 }
