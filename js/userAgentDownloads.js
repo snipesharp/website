@@ -36,9 +36,9 @@ function toggleShowAllOptions() {
     let os = getOS();
 
     if (os == "None") {
+        toggleShowAllOptions();
         downloadLink.textContent = "Downloads"
         downloadOptions.removeAttribute("hidden")
-        downloadLink.setAttribute("href", "")
         downloadLink.classList.add("normalizeLink")
         return;
     }
