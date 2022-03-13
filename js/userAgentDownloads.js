@@ -21,7 +21,8 @@ function getOS() {
     return "None"
 }
 
-function toggleShowAllOptions() {
+function toggleShowAllOptions(event) {
+    event.preventDefault();
     showingAllOptions = !showingAllOptions
     showAllOptions.textContent = !showingAllOptions ? "See all download options" : "See less download options"
     if (!showingAllOptions) downloadOptions.style.animationName = "minimize"
@@ -29,7 +30,7 @@ function toggleShowAllOptions() {
 }
 
 (function () {
-    showAllOptions.removeAttribute("href")
+    showAllOptions.setAttribute("href", "#")
     downloadOptions.classList.add("minimized")
     downloadOptions.removeAttribute("hidden")
     downloadLink.classList.remove("normalizeLink")
