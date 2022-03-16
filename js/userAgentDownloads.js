@@ -1,5 +1,6 @@
 let userAgent = navigator.userAgent;
 let downloadLink = document.getElementById("downloadLink");
+let downloadButton = document.getElementById("downloadButton");
 let downloadOptions = document.getElementById("downloadOptions");
 let showAllOptions = document.getElementById("showAllOptions");
 let showingAllOptions = false;
@@ -46,7 +47,8 @@ function toggleShowAllOptions(event) {
     downloadOptions.classList.add("minimized")
     downloadOptions.removeAttribute("hidden")
     downloadLink.classList.remove("normalizeLink")
-    downloadLink.textContent = "Download for " + os;
+    downloadLink.textContent = "Download for " + os
+    downloadLink.classList.add("downloadButton")
 
     if (os == "Linux") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.6.0/snipesharp_linux-x86-64-v1.6.0");
     if (os == "Linux ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.6.0/snipesharp_linux-arm64-v1.6.0");

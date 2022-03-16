@@ -86,6 +86,7 @@ p {
     margin-right: 2rem;
 }
 
+
 /* Header */
 
 .headerLogo {
@@ -205,6 +206,29 @@ p {
     transform: scale(0);
 }
 
+/* Button */
+
+.downloadButton {
+    overflow: auto;
+
+    background-color: var(--link);
+    color: var(--dark-header-bg);
+    
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.downloadButton::before {
+    display: none;
+}
+.downloadButton:hover {
+    color: white;
+    background-color: rgb(0, 69, 166);
+}
+
 /* Divs */
 
 .minimized {
@@ -251,6 +275,11 @@ p {
     overflow: hidden;
     min-height: 3.75rem;
     max-height: 3.75rem;
+}
+.downloadButtonContainer {
+    min-height: 4.5rem;
+    max-height: 4.5rem;
+    transition: transform 0.5s;
 }
 .linkContainerSmall {
     overflow: hidden;
