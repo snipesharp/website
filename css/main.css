@@ -37,6 +37,12 @@ footer {
 h1 {
     margin-bottom: 0;
 }
+h1::selection {
+    background: rgba(0, 0, 0, 0.5);
+}
+h1::-moz-selection {
+    background: rgba(0, 0, 0, 0.5);
+}
 
 a {
     color: var(--link);
@@ -70,6 +76,12 @@ a::before {
 a:hover::before {
     transform: scaleX(1);
 }
+a::selection {
+    background: rgb(0, 0, 0, 0.5);
+}
+a::-moz-selection {
+    background: rgb(0, 0, 0, 0.5);
+}
 
 input {
     text-align: center;
@@ -85,7 +97,36 @@ p {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+p::selection {
+    background: rgba(0, 0, 0, 0.5);
+}
+p::-moz-selection {
+    background: rgba(0, 0, 0, 0.5);
+}
 
+img {
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none;
+}
+img::selection {
+    background: none;
+}
+img::-moz-selection {
+    background: none;
+}
+img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+br::selection {
+    background: none;
+}
+br::-moz-selection {
+    background: none;
+}
 
 /* Header */
 
@@ -209,6 +250,11 @@ p {
 /* Button */
 
 .downloadButton {
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none;
+
     overflow: auto;
 
     background-color: var(--link);
@@ -227,6 +273,12 @@ p {
 .downloadButton:hover {
     color: white;
     background-color: rgb(0, 69, 166);
+}
+.downloadButton::selection {
+    background: none;
+}
+.downloadButton::-moz-selection {
+    background: none;
 }
 
 /* Divs */
@@ -349,6 +401,10 @@ p {
 }
 
 /* General */
+
+.noPointerEvents {
+    pointer-events: none;
+}
 
 .flex-justify-center {
     justify-content: center;
