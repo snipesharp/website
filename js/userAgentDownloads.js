@@ -16,7 +16,7 @@ function getOS() {
         return "MacOS"
     }
     if (userAgent.includes("nux")) {
-        if (userAgent.includes("ARM64")) return "Windows ARM64"
+        if (userAgent.includes("ARM64")) return "Linux ARM64"
         return "Linux"
     }
     return "None"
