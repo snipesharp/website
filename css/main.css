@@ -106,6 +106,13 @@ p::-moz-selection {
     background: var(--selection)
 }
 
+b::selection {
+    background: var(--selection)
+}
+b::-moz-selection {
+    background: var(--selection)
+}
+
 li::selection {
     background: var(--selection)
 }
