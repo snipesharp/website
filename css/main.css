@@ -8,6 +8,8 @@
 
     --link: rgb(32, 113, 243);
     --link-hovered: rgb(115, 169, 255);
+
+    --selection: rgba(0, 0, 0, 0.4);
 }
 
 /* Global tags */
@@ -38,10 +40,10 @@ h1 {
     margin-bottom: 0;
 }
 h1::selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 h1::-moz-selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 
 a {
@@ -77,10 +79,10 @@ a:hover::before {
     transform: scaleX(1);
 }
 a::selection {
-    background: rgb(0, 0, 0, 0.5);
+    background: var(--selection);
 }
 a::-moz-selection {
-    background: rgb(0, 0, 0, 0.5);
+    background: var(--selection);
 }
 
 input {
@@ -98,24 +100,24 @@ p {
     margin-right: 2rem;
 }
 p::selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 p::-moz-selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 
 li::selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 li::-moz-selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 
 ul::selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 ul::-moz-selection {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--selection)
 }
 
 img {
