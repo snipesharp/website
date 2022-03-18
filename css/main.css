@@ -104,6 +104,20 @@ p::-moz-selection {
     background: rgba(0, 0, 0, 0.5);
 }
 
+li::selection {
+    background: rgba(0, 0, 0, 0.5);
+}
+li::-moz-selection {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+ul::selection {
+    background: rgba(0, 0, 0, 0.5);
+}
+ul::-moz-selection {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 img {
     -webkit-user-drag: none; 
     -khtml-user-drag: none; 
