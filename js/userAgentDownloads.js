@@ -6,6 +6,7 @@ let showAllOptions = document.getElementById("showAllOptions");
 let showingAllOptions = false;
 
 function getOS() {
+    if (!userAgent) return "None"
     if (userAgent.includes("Android")) return "None"
     if (userAgent.includes("Windows")) {
         if (userAgent.includes("ARM64")) return "Windows ARM64"

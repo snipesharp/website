@@ -300,7 +300,7 @@ br::-moz-selection {
     100% {
         transform: scale(1);
         opacity: 1;
-        max-height: 15rem;
+        max-height: 1500rem;
     }
 }
 
