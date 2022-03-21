@@ -98,7 +98,8 @@ function initPayPalButton() {
           // Show a success message within this page, e.g.
           const element = document.getElementById('paypal-button-container');
           element.innerHTML = '';
-          element.innerHTML = '<h3>Thank you for your donation, make sure to join our Discord to receive your reward!</h3>';
+          element.innerHTML =   '<h1>Thank you <img height="32" src="/img/blue_hearts.gif"></h1>' +
+                                '<p>Make sure to join our <a href="/discord">Discord</a> to receive your reward!</p>';
   
           // Or go to another URL:  actions.redirect('thank_you.html');
           
