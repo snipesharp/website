@@ -39,12 +39,6 @@ footer {
 h1 {
     margin-bottom: 0;
 }
-h1::selection {
-    background: var(--selection)
-}
-h1::-moz-selection {
-    background: var(--selection)
-}
 
 a {
     color: var(--link);
@@ -78,9 +72,6 @@ a::before {
 a:hover::before {
     transform: scaleX(1);
 }
-a::selection {
-    background: var(--selection);
-}
 a::-moz-selection {
     background: var(--selection);
 }
@@ -99,33 +90,6 @@ p {
     margin-left: 2rem;
     margin-right: 2rem;
 }
-p::selection {
-    background: var(--selection)
-}
-p::-moz-selection {
-    background: var(--selection)
-}
-
-b::selection {
-    background: var(--selection)
-}
-b::-moz-selection {
-    background: var(--selection)
-}
-
-li::selection {
-    background: var(--selection)
-}
-li::-moz-selection {
-    background: var(--selection)
-}
-
-ul::selection {
-    background: var(--selection)
-}
-ul::-moz-selection {
-    background: var(--selection)
-}
 
 img {
     -webkit-user-drag: none; 
@@ -133,17 +97,56 @@ img {
     -moz-user-drag: none; 
     -o-user-drag: none;
 }
+img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Selections */
+
+h1::selection {
+    background: var(--selection)
+}
+h1::-moz-selection {
+    background: var(--selection)
+}
+a::selection {
+    background: var(--selection)
+}
+a::-moz-selection {
+    background: var(--selection)
+}
+p::selection {
+    background: var(--selection)
+}
+p::-moz-selection {
+    background: var(--selection)
+}
+b::selection {
+    background: var(--selection)
+}
+b::-moz-selection {
+    background: var(--selection)
+}
+i::selection {
+    background: var(--selection)
+}
+li::-moz-selection {
+    background: var(--selection)
+}
+ul::selection {
+    background: var(--selection)
+}
+ul::-moz-selection {
+    background: var(--selection)
+}
+
 img::selection {
     background: none;
 }
 img::-moz-selection {
     background: none;
 }
-img {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 br::selection {
     background: none;
 }
@@ -226,34 +229,21 @@ br::-moz-selection {
         transform: scale(0.8);
     }
 }
-.crosshair:hover {
+.blueS:hover, .whiteS:hover, .crosshair:hover {
     font-size: 100%;
 }
-.whiteS:hover {
-    font-size: 100%;
-}
-.blueS:hover {
-    font-size: 100%;
-}
-.crosshair::before {
-    background-color: unset;
-}
-.whiteS::before {
-    background-color: unset;
-}
-.blueS::before {
+.crosshair::before, .whiteS::before, .blueS::before {
     background-color: unset;
 }
 
 .dementedHead {
     max-height: 4rem;
 }
-.dementedHead::before {
-    background-color: red;
-}
-
 .stiliyanHead {
     max-height: 4rem;
+}
+.dementedHead::before {
+    background-color: red;
 }
 .stiliyanHead::before {
     background-color: rgb(59, 142, 62);
