@@ -9,11 +9,11 @@ if (os == "None") {
 
 downloadText.textContent = "Downloading snipesharp for " + os;
 
-if (os == "Linux") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.5/snipesharp_linux-x86-64-v1.7.5")
-if (os == "Linux ARM64") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.5/snipesharp_linux-arm64-v1.7.5")
+if (os == "Linux") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.6/snipesharp_linux-x86-64-v1.7.6")
+if (os == "Linux ARM64") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.6/snipesharp_linux-arm64-v1.7.6")
 
-if (os == "Windows") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.5/snipesharp_win-x86-64-v1.7.5.exe")
-if (os == "Windows ARM64") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.5/snipesharp_win-arm64-v1.7.5.exe")
+if (os == "Windows") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.6/snipesharp_win-x86-64-v1.7.6.exe")
+if (os == "Windows ARM64") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.6/snipesharp_win-arm64-v1.7.6.exe")
 
-if (os == "MacOS") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.5/snipesharp_mac-os-x86-64-v1.7.5")
-if (os == "MacOS ARM64") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.5/snipesharp_mac-os-arm64-v1.7.5")
+if (os == "MacOS") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.6/snipesharp_mac-os-x86-64-v1.7.6")
+if (os == "MacOS ARM64") location.replace("https://github.com/snipesharp/snipesharp/releases/download/v1.7.6/snipesharp_mac-os-arm64-v1.7.6")
