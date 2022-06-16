@@ -296,6 +296,10 @@ br::-moz-selection {
 
 /* Divs */
 
+#featuresContainer {
+    margin-left: 10%;
+}
+
 .minimized {
     overflow: hidden;
     max-height: 0rem;
