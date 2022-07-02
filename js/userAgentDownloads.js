@@ -51,12 +51,12 @@ function toggleShowAllOptions(event) {
     downloadLink.textContent = "Download for " + os
     downloadLink.classList.add("downloadButton")
 
-    if (os == "Linux") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.1/snipesharp_linux-x86-64-v1.8.1");
-    if (os == "Linux ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.1/snipesharp_linux-arm64-v1.8.1");
+    if (os == "Linux") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-x86-64-v1.8.2");
+    if (os == "Linux ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm64-v1.8.2");
 
-    if (os == "Windows") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.1/snipesharp_win-x86-64-v1.8.1.exe");
-    if (os == "Windows ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.1/snipesharp_win-arm64-v1.8.1.exe");
+    if (os == "Windows") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-x86-64-v1.8.2.exe");
+    if (os == "Windows ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-arm64-v1.8.2.exe");
 
-    if (os == "MacOS") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.1/snipesharp_mac-os-x86-64-v1.8.1");
-    if (os == "MacOS ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.1/snipesharp_mac-os-arm64-v1.8.1");
+    if (os == "MacOS") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-x86-64-v1.8.2");
+    if (os == "MacOS ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-arm64-v1.8.2");
 }())
