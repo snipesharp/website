@@ -65,7 +65,7 @@ featuresTitle.classList.remove("normalizeLink")
 featuresTitle.textContent = "See Features"
 
 
-document.addEventListener(('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#body-content').removeAttribute('hidden')
     document.querySelector('.loader').remove()
-}))
+})

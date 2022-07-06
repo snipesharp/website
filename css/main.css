@@ -509,10 +509,9 @@ br::-moz-selection {
 /* Loading page */
 
 .loader {
-    max-height: 100vh;
+    height: 100%;
     max-width: 100%;
     min-width: 100%;
-    min-height: 100vh;
     z-index: 99999;
     
     position:absolute;
