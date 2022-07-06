@@ -67,5 +67,7 @@ featuresTitle.textContent = "See Features"
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#body-content').removeAttribute('hidden')
+    //document.querySelector('.loader').style.animationName = "fadeOut"
+    //setTimeout(() => document.querySelector('.loader').remove(), 1200)
     document.querySelector('.loader').remove()
 })

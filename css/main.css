@@ -159,20 +159,6 @@ br::-moz-selection {
 .headerLogo {
     max-height: 5rem;
 }
-.loaderCrosshair {
-    animation-name: rotating;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 1.5s;
-}
-@keyframes rotating {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 .crosshair {
     position: absolute;
     overflow: hidden;
@@ -496,7 +482,7 @@ br::-moz-selection {
 /* Star */
 
 .star {
-    max-width: 1.5rem;
+    max-width: 1.5rem; 
     vertical-align: text-bottom;
 
     transition: 500ms;
@@ -514,13 +500,14 @@ br::-moz-selection {
     min-width: 100%;
     z-index: 99999;
     
-    position:absolute;
+    position: fixed;
     display: flex;
 
     justify-content: center;
     align-content: center;
 
-    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
     background: var(--dark-header-bg);
 }
 .loader * {
@@ -529,4 +516,27 @@ br::-moz-selection {
 
     justify-content: center;
     align-self: center;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+.loaderCrosshair {
+    animation-name: rotating;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
