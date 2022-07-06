@@ -34,10 +34,6 @@ function toggleShowFeatures(event) {
         featuresContainer.style.animationName = "unminimize"
     }
 }
-featuresContainer.classList.add("minimized")
-featuresTitle.classList.remove("normalizeLink")
-featuresTitle.textContent = "See Features"
-
 
 function copyXmrDemented() {
     var r = document.createRange();
@@ -63,3 +59,10 @@ function copyXmrStiliyan() {
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
 }
+
+featuresContainer.classList.add("minimized")
+featuresTitle.classList.remove("normalizeLink")
+featuresTitle.textContent = "See Features"
+
+document.querySelector('#body-content').removeAttribute('hidden')
+document.querySelector('.loader').remove()

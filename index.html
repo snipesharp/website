@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="snipesharp" property="og:title" />
-    <meta content="Snipesharp is an Open Source & easy to use Minecraft name Sniper featuring 24/7 giftcard & normal sniping, Discord RPC & more! Snipesharp is coded in .NET C# and is focused on both speed and user friendliness." property="og:description" />
+    <meta
+        content="Snipesharp is an Open Source & easy to use Minecraft name Sniper featuring 24/7 giftcard & normal sniping, Discord RPC & more! Snipesharp is coded in .NET C# and is focused on both speed and user friendliness."
+        property="og:description" />
     <meta content="https://snipesharp.xyz" property="og:url" />
     <meta content="https://snipesharp.xyz/img/logo.png" property="og:image" />
     <meta content="#0362fc" data-react-helmet="true" name="theme-color" />
@@ -14,229 +17,295 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/animated-dash.css">
 </head>
+
 <body>
-    <header class="flex-row flex-justify-center">
-        <a class="loadIn noJs dementedHead z1" href="/demented"><img class="dementedHead z1" src="/img/demented.png"></img></a>
-
-        <a class="blueS" href="/"><img src="/img/blue_s.png" class="headerLogo"></a>
-        <a class="whiteS" href="/"><img src="/img/white_s.png" class="headerLogo"></a>
-        <a class="crosshair" href="/"><img src="/img/crosshair.png" class="headerLogo"></a>
-
-        <a class="loadIn noJs stiliyanHead" href="/stiliyan"><img class="stiliyanHead" src="/img/stiliyan.png"></img></a>
-    </header>
-
-    <div class="hcentered z1">
-        <div class="linkContainer">
-            <h1 class="loadIn noJs">About</h1>
-        </div>
-        <p class="loadIn noJs">
-            Snipesharp is an <a href="https://github.com/snipesharp/snipesharp" target="_blank" rel="noopener noreferrer">Open Source</a> & easy to use Minecraft name Sniper<br>
-            featuring 24/7 giftcard & normal sniping, Discord RPC & more!<br>
-            Snipesharp is coded in <a href="https://dotnet.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">.NET</a> C# and is focused on both speed and user friendliness.
-        </p>
-        <iframe style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); border-radius: 5px; aspect-ratio: 16/9; width: 40rem; max-width: 80%" src="https://www.youtube.com/embed/hoM8PeW6q1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br><br>
-        <div class="separator hcentered"></div>
-        <div class="loadIn noJs downloadButtonContainer flex-justify-center flex-column">
-            <a id="downloadLink" class="normalizeLink titleLink" href="#">Downloads</a>
-        </div>
-        <br>
-        <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/sha256sums.txt">
-            <img style="padding: 0; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" class="loadIn noJs" src="https://img.shields.io/badge/sha256sums-%231a6eef?style=flat-square"></a>
-        <div id="downloadOptions" class="loadIn noJs">
+    <div class="loader">
+        <a class="" href="/"><img src="/img/blue_s.png" class="headerLogo"></a>
+        <a class="" href="/"><img src="/img/white_s.png" class="headerLogo"></a>
+        <a class="loaderCrosshair" href="/"><img src="/img/crosshair.png" class="headerLogo"></a>
+    </div>
+    <div hidden id="body-content">
+        <header class="flex-row flex-justify-center">
+            <a class="loadIn noJs dementedHead z1" href="/demented"><img class="dementedHead z1"
+                    src="/img/demented.png"></img></a>
+    
+            <a class="blueS" href="/"><img src="/img/blue_s.png" class="headerLogo"></a>
+            <a class="whiteS" href="/"><img src="/img/white_s.png" class="headerLogo"></a>
+            <a class="crosshair" href="/"><img src="/img/crosshair.png" class="headerLogo"></a>
+    
+            <a class="loadIn noJs stiliyanHead" href="/stiliyan"><img class="stiliyanHead"
+                    src="/img/stiliyan.png"></img></a>
+        </header>
+    
+        <div class="hcentered z1">
+            <div class="linkContainer">
+                <h1 class="loadIn noJs">About</h1>
+            </div>
+            <p class="loadIn noJs">
+                Snipesharp is an <a href="https://github.com/snipesharp/snipesharp" target="_blank"
+                    rel="noopener noreferrer">Open Source</a> & easy to use Minecraft name Sniper<br>
+                featuring 24/7 giftcard & normal sniping, Discord RPC & more!<br>
+                Snipesharp is coded in <a href="https://dotnet.microsoft.com/en-us/" target="_blank"
+                    rel="noopener noreferrer">.NET</a> C# and is focused on both speed and user friendliness.
+            </p>
+            <iframe
+                style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); border-radius: 5px; aspect-ratio: 16/9; width: 40rem; max-width: 80%"
+                src="https://www.youtube.com/embed/hoM8PeW6q1g" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <br><br>
+            <div class="separator hcentered"></div>
+            <div class="loadIn noJs downloadButtonContainer flex-justify-center flex-column">
+                <a id="downloadLink" class="normalizeLink titleLink" href="#">Downloads</a>
+            </div>
             <br>
-            x86-64
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-x86-64-v1.8.2">
-                <img src="https://img.shields.io/badge/_linux-v1.8.2-%231a6eef?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-x86-64-v1.8.2">
-                <img src="https://img.shields.io/badge/_mac_os-v1.8.2-%231a6eef?style=flat-square&logo=apple&logoWidth=20&logoColor=white"></a>
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-x86-64-v1.8.2.exe">
-                <img src="https://img.shields.io/badge/_windows-v1.8.2-%231a6eef?style=flat-square&logo=windows&logoWidth=20&logoColor=white"></a>
-            <br><br>
-            arm64
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm64-v1.8.2">
-                <img src="https://img.shields.io/badge/linux_arm64-v1.8.2-%23015fa1?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-arm64-v1.8.2">
-                <img src="https://img.shields.io/badge/mac_os_arm64-v1.8.2-%23015fa1?style=flat-square&logo=apple&logoWidth=20&logoColor=white"></a>
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-arm64-v1.8.2.exe">
-                <img src="https://img.shields.io/badge/windows_arm64-v1.8.2-%23015fa1?style=flat-square&logo=windows&logoWidth=20&logoColor=white"></a>
-            <br><br>
-            other
-            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm-v1.8.2">
-                <img src="https://img.shields.io/badge/linux_arm-v1.8.2-%233633de?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
-                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-redhat-x86-64-v1.8.2">
-                    <img src="https://img.shields.io/badge/linux_redhat-v1.8.2-%233633de?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
-        </div>
-
-        <br>
-        <div class="loadIn noJs">
-            <img class="noPointerEvents" src="https://img.shields.io/github/downloads/snipesharp/snipesharp/total?color=1aaf19&logo=github&label=downloads&style=flat"><img class="noPointerEvents" src="https://img.shields.io/github/stars/snipesharp?color=d7b608&logo=github&style=flat">
-            <br><br>
-        </div>
-        
-        <div class="loadIn noJs linkContainerSmall flex-justify-center flex-column">
-            <a id="showAllOptions" onclick="toggleShowAllOptions(event)" href="https://github.com/snipesharp/snipesharp/releases/latest" target="_blank" rel="noopener noreferrer">
-                See all download options
-            </a>
-        </div>
-        <p class="loadIn noJs">
-            If you like using snipesharp, consider giving us a <a class="noUnderline" href="https://github.com/snipesharp/snipesharp/" target="_blank" rel="noopener noreferrer"><img class="star" src="/img/star.png"/></a> on Github!
-        </p>
-        <br>
-        <div class="separator hcentered"></div>
-        <div class="loadIn noJs linkContainer flex-justify-center flex-column">
-            <a class="titleLink" href="/donate">
-                Donate<img height="32" src="/img/blue_hearts.gif">
-            </a>
-        </div>
-        <p class="loadIn noJs">
-            Support the snipesharp developers and help the project grow by donating<br><br>
-            Leave your Discord username & tag or User ID as a note<br> if you want to be rewarded with a special role in our <a href="https://snipesharp.xyz/discord" target="_blank" rel="noopener noreferrer">Discord server</a>
-            <br><br>
-        </p>
-
-        <div class="separator hcentered"></div>
-        <div class="loadIn noJs linkContainer flex-justify-center flex-column">
-            <a id="featuresTitle" onclick="toggleShowFeatures(event)" href="#" class="normalizeLink titleLink">Features</a>
-        </div>
-        <div id="featuresContainer" class="loadIn noJs textAlignLeft">
-            <div class="loadIn noJs">
-                <h1>General</h1>
-                <ul>
-                    <li><b>Discord RPC</b></li>
-                    <ul>
-                        <li>
-                            <img style="padding: 0; margin: 15px; margin-left: 5px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" height="128px" align="center" src="/img/discordrpc.png"/>
-                        </li>
-                    </ul>
-                    <li><b>Auto NameMC follow on success</b></li>
-                    <li><b>Ease of use</b></li>
-                    <li><b>Auto update</b></li>
-                    <li><b>24/7 sniping support</b></li>
-                </ul>
+            <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/sha256sums.txt">
+                <img style="padding: 0; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);"
+                    class="loadIn noJs" src="https://img.shields.io/badge/sha256sums-%231a6eef?style=flat-square"></a>
+            <div id="downloadOptions" class="loadIn noJs">
+                <br>
+                x86-64
+                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-x86-64-v1.8.2">
+                    <img
+                        src="https://img.shields.io/badge/_linux-v1.8.2-%231a6eef?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
+                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-x86-64-v1.8.2">
+                    <img
+                        src="https://img.shields.io/badge/_mac_os-v1.8.2-%231a6eef?style=flat-square&logo=apple&logoWidth=20&logoColor=white"></a>
+                <a
+                    href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-x86-64-v1.8.2.exe">
+                    <img
+                        src="https://img.shields.io/badge/_windows-v1.8.2-%231a6eef?style=flat-square&logo=windows&logoWidth=20&logoColor=white"></a>
+                <br><br>
+                arm64
+                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm64-v1.8.2">
+                    <img
+                        src="https://img.shields.io/badge/linux_arm64-v1.8.2-%23015fa1?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
+                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-arm64-v1.8.2">
+                    <img
+                        src="https://img.shields.io/badge/mac_os_arm64-v1.8.2-%23015fa1?style=flat-square&logo=apple&logoWidth=20&logoColor=white"></a>
+                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-arm64-v1.8.2.exe">
+                    <img
+                        src="https://img.shields.io/badge/windows_arm64-v1.8.2-%23015fa1?style=flat-square&logo=windows&logoWidth=20&logoColor=white"></a>
+                <br><br>
+                other
+                <a href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm-v1.8.2">
+                    <img
+                        src="https://img.shields.io/badge/linux_arm-v1.8.2-%233633de?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
+                <a
+                    href="https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-redhat-x86-64-v1.8.2">
+                    <img
+                        src="https://img.shields.io/badge/linux_redhat-v1.8.2-%233633de?style=flat-square&logo=linux&logoWidth=20&logoColor=white"></a>
             </div>
-
+    
+            <br>
             <div class="loadIn noJs">
-                <h1>Logging in</h1>
-                <ul>
-                    <li><b>Features</b></li>
-                    <ul>
-                        <li>Completely possible through the Console Interface</li>
-                        <li>Re-use of previous credentials</li>
-                        <li>Giftcode redeeming when logging in with accounts which don't own Minecraft</li>
-                    </ul>
-                    <li><b>Methods</b></li>
-                    <ul>
-                        <li>Microsoft Login</li>
-                        <li>Mojang Login</li>
-                        <li>Bearer Token Login</li>
-                        <li>Using previous session credentials/bearer</li>
-                    </ul>
-                    <li><b>Configuration (<a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">account.json</a>)</b></li>
-                    <ul>
-                        <li>All credentials (including Bearer Token) can be edited through <a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">account.json</a></li>
-                    </ul>
-                </ul>
+                <img class="noPointerEvents"
+                    src="https://img.shields.io/github/downloads/snipesharp/snipesharp/total?color=1aaf19&logo=github&label=downloads&style=flat"><img
+                    class="noPointerEvents"
+                    src="https://img.shields.io/github/stars/snipesharp?color=d7b608&logo=github&style=flat">
+                <br><br>
             </div>
-
-            <div class="loadIn noJs">
-                <h1>Sniping</h1>
-                <ul>
-                    <li><b>Features</b></li>
-                    <ul>
-                        <li>Giftcard (prename) sniping</li>
-                        <li>Seamless bearer reauthentication for 24/7 sniping support (Only works when using Microsoft & Mojang accounts)</li>
-                        <li>Snipe custom name</li>
-                        <li>Snipe popular names only</li>
-                        <li>Snipe 3 character names only</li>
-                        <ul>
-                            <li>Supports sniping 24/7 (Bearer gets updated using Microsoft/Mojang Account credentials)</li>
-                        </ul>
-                        <li>Snipe from a custom name list</li>
-                        <ul>
-                            <li>Automatically clean name list of names which were already sniped, can be disabled from <a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a></li>
-                            <li>Supports sniping 24/7 (Bearer gets updated using Microsoft/Mojang Account credentials)</li>
-                            <li>Snipes in top to bottom order</li>
-                        </ul>
-                        <li>Automatic (suggested) offset based on your ping and math</li>
-                    </ul>
-                    <li><b>Configuration (<a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a> & In App) </b></li>
-                    <ul>
-                        <li>Custom offset configured in app</li>
-                        <li>Custom name configured in app</li>
-                        <li>Custom name list configured in <a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a></li>
-                        <li>Custom packets sent amount configured in <a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a></li>
-                        <li>Custom delay between packets sent configured in <a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a></li>
-                    </ul>
-                </ul>
+    
+            <div class="loadIn noJs linkContainerSmall flex-justify-center flex-column">
+                <a id="showAllOptions" onclick="toggleShowAllOptions(event)"
+                    href="https://github.com/snipesharp/snipesharp/releases/latest" target="_blank"
+                    rel="noopener noreferrer">
+                    See all download options
+                </a>
             </div>
-            
-            <div class="loadIn noJs">
-                <h1>Post sniping</h1>
-                <ul>
-                    <li><b>Auto NameMC follow on success</b></li>
-                    <li><b>Discord webhooks</b></li>
+            <p class="loadIn noJs">
+                If you like using snipesharp, consider giving us a <a class="noUnderline"
+                    href="https://github.com/snipesharp/snipesharp/" target="_blank" rel="noopener noreferrer"><img
+                        class="star" src="/img/star.png" /></a> on Github!
+            </p>
+            <br>
+            <div class="separator hcentered"></div>
+            <div class="loadIn noJs linkContainer flex-justify-center flex-column">
+                <a class="titleLink" href="/donate">
+                    Donate<img height="32" src="/img/blue_hearts.gif">
+                </a>
+            </div>
+            <p class="loadIn noJs">
+                Support the snipesharp developers and help the project grow by donating<br><br>
+                Leave your Discord username & tag or User ID as a note<br> if you want to be rewarded with a special role in
+                our <a href="https://snipesharp.xyz/discord" target="_blank" rel="noopener noreferrer">Discord server</a>
+                <br><br>
+            </p>
+    
+            <div class="separator hcentered"></div>
+            <div class="loadIn noJs linkContainer flex-justify-center flex-column">
+                <a id="featuresTitle" onclick="toggleShowFeatures(event)" href="#"
+                    class="normalizeLink titleLink">Features</a>
+            </div>
+            <div id="featuresContainer" class="loadIn noJs textAlignLeft">
+                <div class="loadIn noJs">
+                    <h1>General</h1>
                     <ul>
-                        <li>Success webhooks</li>
+                        <li><b>Discord RPC</b></li>
                         <ul>
                             <li>
-                                <img style="padding: 0; max-width: 90%;  margin: 15px; margin-left: 5px; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" align="center" src="/img/t4f.png"/>
+                                <img style="padding: 0; margin: 15px; margin-left: 5px; border-radius: 10px;
+                                max-width: 90%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" align="center"
+                                    src="/img/discordrpc.png" />
                             </li>
-                            <li>Configuration (<a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a>)</li>
+                        </ul>
+                        <li><b>Auto NameMC follow on success</b></li>
+                        <li><b>Ease of use</b></li>
+                        <li><b>Auto update</b></li>
+                        <li><b>24/7 sniping support</b></li>
+                    </ul>
+                </div>
+    
+                <div class="loadIn noJs">
+                    <h1>Logging in</h1>
+                    <ul>
+                        <li><b>Features</b></li>
+                        <ul>
+                            <li>Completely possible through the Console Interface</li>
+                            <li>Re-use of previous credentials</li>
+                            <li>Giftcode redeeming when logging in with accounts which don't own Minecraft</li>
+                        </ul>
+                        <li><b>Methods</b></li>
+                        <ul>
+                            <li>Microsoft Login</li>
+                            <li>Mojang Login</li>
+                            <li>Bearer Token Login</li>
+                            <li>Using previous session credentials/bearer</li>
+                        </ul>
+                        <li><b>Configuration (<a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">account.json</a>)</b></li>
+                        <ul>
+                            <li>All credentials (including Bearer Token) can be edited through <a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">account.json</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+    
+                <div class="loadIn noJs">
+                    <h1>Sniping</h1>
+                    <ul>
+                        <li><b>Features</b></li>
+                        <ul>
+                            <li>Giftcard (prename) sniping</li>
+                            <li>Seamless bearer reauthentication for 24/7 sniping support (Only works when using Microsoft &
+                                Mojang accounts)</li>
+                            <li>Snipe custom name</li>
+                            <li>Snipe popular names only</li>
+                            <li>Snipe 3 character names only</li>
                             <ul>
-                                <li>Custom username contained in webhook</li>
-                                <li>Enable/disable webhook to snipesharp Discord server</li>
-                                <li>Enable/disable webhook to custom Discord server</li>
+                                <li>Supports sniping 24/7 (Bearer gets updated using Microsoft/Mojang Account credentials)
+                                </li>
+                            </ul>
+                            <li>Snipe from a custom name list</li>
+                            <ul>
+                                <li>Automatically clean name list of names which were already sniped, can be disabled from
+                                    <a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                        target="_blank" rel="noopener noreferrer">config.json</a>
+                                </li>
+                                <li>Supports sniping 24/7 (Bearer gets updated using Microsoft/Mojang Account credentials)
+                                </li>
+                                <li>Snipes in top to bottom order</li>
+                            </ul>
+                            <li>Automatic (suggested) offset based on your ping and math</li>
+                        </ul>
+                        <li><b>Configuration (<a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">config.json</a> & In App) </b></li>
+                        <ul>
+                            <li>Custom offset configured in app</li>
+                            <li>Custom name configured in app</li>
+                            <li>Custom name list configured in <a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">config.json</a>
+                            </li>
+                            <li>Custom packets sent amount configured in <a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">config.json</a>
+                            </li>
+                            <li>Custom delay between packets sent configured in <a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">config.json</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+    
+                <div class="loadIn noJs">
+                    <h1>Post sniping</h1>
+                    <ul>
+                        <li><b>Auto NameMC follow on success</b></li>
+                        <li><b>Discord webhooks</b></li>
+                        <ul>
+                            <li>Success webhooks</li>
+                            <ul>
+                                <li>
+                                    <img style="padding: 0; max-width: 90%;  margin: 15px; margin-left: 5px;
+                                    border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" align="center"
+                                        src="/img/t4f.png" />
+                                </li>
+                                <li>Configuration (<a
+                                        href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                        target="_blank" rel="noopener noreferrer">config.json</a>)
+                                </li>
+                                <ul>
+                                    <li>Custom username contained in webhook</li>
+                                    <li>Enable/disable webhook to snipesharp Discord server</li>
+                                    <li>Enable/disable webhook to custom Discord server</li>
+                                </ul>
+                            </ul>
+                            <li>Results webhooks</li>
+                            <ul>
+                                <li>
+                                    <img style="padding: 0; max-width: 90%;  margin: 15px; margin-left: 5px;
+                                    border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" align="center"
+                                        src="/img/resultswh.png" />
+                                </li>
                             </ul>
                         </ul>
-                        <li>Results webhooks</li>
+                        <li><b>Automatic skin change</b></li>
                         <ul>
-                            <li>
-                                <img style="padding: 0; max-width: 90%;  margin: 15px; margin-left: 5px; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);" align="center" src="/img/resultswh.png"/>
-                            </li>
+                            <li>Configuration (<a
+                                    href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"
+                                    target="_blank" rel="noopener noreferrer">config.json</a>)</li>
+                            <ul>
+                                <li>Custom skin</li>
+                                <li>Custom skin type (classic/slim)</li>
+                            </ul>
                         </ul>
                     </ul>
-                    <li><b>Automatic skin change</b></li>
-                    <ul>
-                        <li>Configuration (<a href="https://github.com/snipesharp/snipesharp#configuration-file-locations-%EF%B8%8F"  target="_blank" rel="noopener noreferrer">config.json</a>)</li>
-                        <ul>
-                            <li>Custom skin</li>
-                            <li>Custom skin type (classic/slim)</li>
-                        </ul>
-                    </ul>
-                </ul>
+                </div>
             </div>
+            <p class="loadIn noJs">See what snipesharp has to offer!</p>
+            <br>
+            <div class="separator hcentered"></div>
+            <div class="loadIn noJs linkContainer flex-justify-center flex-column">
+                <a class="titleLink big" href="https://snipesharp.xyz/discord" target="_blank" rel="noopener noreferrer">
+                    Join our Discord server!
+                </a>
+            </div>
+            <widgetbot server="943483411597758494" channel="943483411597758497" width="60rem" height="500"
+                style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); max-width: 80%;"></widgetbot>
+            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
         </div>
-        <p class="loadIn noJs">See what snipesharp has to offer!</p>
-        <br>
+    
         <div class="separator hcentered"></div>
-        <div class="loadIn noJs linkContainer flex-justify-center flex-column">
-            <a class="titleLink big" href="https://snipesharp.xyz/discord" target="_blank" rel="noopener noreferrer">
-                Join our Discord server!
-            </a>
-        </div>
-        <widgetbot
-            server="943483411597758494"
-            channel="943483411597758497"
-            width="60rem"
-            height="500"
-            style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); max-width: 80%;"
-        ></widgetbot>
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+        <footer class="flex-column flex-justify-center">
+            <p>
+                snipesharp by demented & Stiliyan Kushev
+                • <a href="/donate">Donate</a>
+                • <a href="https://github.com/snipesharp" target="_blank" rel="noopener noreferrer">Github</a>
+                • <a href="/discord" target="_blank" rel="noopener noreferrer">Discord</a>
+                • <a href="https://github.com/snipesharp/snipesharp/wiki" target="_blank" rel="noopener noreferrer">Help</a>
+            </p>
+        </footer>
     </div>
-
-    <div class="separator hcentered"></div>
-    <footer class="flex-column flex-justify-center">
-        <p>
-            snipesharp by demented & Stiliyan Kushev
-             • <a href="/donate">Donate</a>
-             • <a href="https://github.com/snipesharp" target="_blank" rel="noopener noreferrer">Github</a>
-             • <a href="/discord" target="_blank" rel="noopener noreferrer">Discord</a> 
-             • <a href="https://github.com/snipesharp/snipesharp/wiki" target="_blank" rel="noopener noreferrer">Help</a> 
-        </p>
-    </footer>
     
     <script src="/js/index.js"></script>
     <script src="/js/userAgentDownloads.js"></script>
 </body>
+
 </html>

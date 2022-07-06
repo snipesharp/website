@@ -159,7 +159,20 @@ br::-moz-selection {
 .headerLogo {
     max-height: 5rem;
 }
-
+.loaderCrosshair {
+    animation-name: rotating;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .crosshair {
     position: absolute;
     overflow: hidden;
@@ -211,6 +224,7 @@ br::-moz-selection {
         transform: scale(0.8);
     }
 }
+
 .blueS {
     position:absolute;
     transform: scale(0.8);
@@ -490,4 +504,30 @@ br::-moz-selection {
 }
 .star:hover {
     transform: scale(1.25) rotate(145deg);
+}
+
+/* Loading page */
+
+.loader {
+    max-height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 99999;
+    
+    position:absolute;
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+
+    animation-duration: 1s;
+    background: var(--dark-header-bg);
+}
+.loader * {
+    position: absolute;
+    display: flex;
+
+    justify-content: center;
+    align-self: center;
 }
