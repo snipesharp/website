@@ -33,27 +33,31 @@ function toggleShowAllOptions(event) {
     }
 }
 
-let os = getOS();
-if (os == "None") {
-    toggleShowAllOptions();
-    downloadLink.textContent = "Downloads"
-    downloadLink.classList.add("normalizeLink")
+
+// no idea why this has to be in a function to work
+(function () {
+    let os = getOS();
+    if (os == "None") {
+        toggleShowAllOptions();
+        downloadLink.textContent = "Downloads"
+        downloadLink.classList.add("normalizeLink")
+        downloadOptions.removeAttribute("hidden")
+        return;
+    }
+    
+    showAllOptions.setAttribute("href", "#")
+    downloadOptions.classList.add("minimized")
     downloadOptions.removeAttribute("hidden")
-    return;
-}
-
-showAllOptions.setAttribute("href", "#")
-downloadOptions.classList.add("minimized")
-downloadOptions.removeAttribute("hidden")
-downloadLink.classList.remove("normalizeLink")
-downloadLink.textContent = "Download for " + os
-downloadLink.classList.add("downloadButton")
-
-if (os == "Linux") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-x86-64-v1.8.2");
-if (os == "Linux ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm64-v1.8.2");
-
-if (os == "Windows") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-x86-64-v1.8.2.exe");
-if (os == "Windows ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-arm64-v1.8.2.exe");
-
-if (os == "MacOS") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-x86-64-v1.8.2");
-if (os == "MacOS ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-arm64-v1.8.2");
+    downloadLink.classList.remove("normalizeLink")
+    downloadLink.textContent = "Download for " + os
+    downloadLink.classList.add("downloadButton")
+    
+    if (os == "Linux") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-x86-64-v1.8.2");
+    if (os == "Linux ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_linux-arm64-v1.8.2");
+    
+    if (os == "Windows") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-x86-64-v1.8.2.exe");
+    if (os == "Windows ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_win-arm64-v1.8.2.exe");
+    
+    if (os == "MacOS") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-x86-64-v1.8.2");
+    if (os == "MacOS ARM64") downloadLink.setAttribute("href", "https://github.com/snipesharp/snipesharp/releases/download/v1.8.2/snipesharp_mac-os-arm64-v1.8.2");
+})()
